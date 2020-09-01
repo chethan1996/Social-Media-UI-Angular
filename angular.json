@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Panorbit-Assignment"
+    }
+  },
+  "defaultProject": "Panorbit-Assignment",
+  "cli": {
+    "analytics": "dfc17783-cba0-4e30-b2a5-9a8889da2118"
+  }
 }
