@@ -1,23 +1,28 @@
   .sidebar{
     margin: auto;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 50px;
     padding: 10px;
     border-radius: 25px;
     /* border: 2px solid DodgerBlue; */
     padding: 20px; 
     width: 300px;
-    height: 800px;  
+    height: 850px;  
     float: left;
     background-color: hsl(0, 0%, 94%);
     box-shadow: black;
     background-color: blue; /* For browsers that do not support gradients */
-    background-image: linear-gradient( blue, purple); 
+    background-image: linear-gradient( blue, purple);
+    position: relative;
+    z-index: 1;
     
   }
 
   #content{
       margin-top:200px;
+     z-index: 1;
+     
+
   }
 
   .profile, .galary , .todo , .posts{
@@ -32,4 +37,37 @@
 #active{
     float:right;
     
+}
+
+.content{
+    margin: 80px;
+    
+}
+
+.profile-image{
+    max-width: 50px;
+    max-height: 10vh;
+
+}
+
+.name{
+    margin: 10px 2px 2px;
+    float: right;
+}
+
+.singout{
+    margin-top: -30px;
+    margin-left: -390px;
+    padding: 10px;
+    border-radius: 25px;
+    padding: 20px; 
+    border:1px solid white;
+    width: 350px;
+    height: 430px;  
+    float: right;
+    background-color: hsl(0, 0%, 94%);
+    box-shadow:20px 20px 50px grey;
+    position: absolute;
+    z-index: 2;
+
 }

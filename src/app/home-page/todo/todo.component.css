@@ -1,0 +1,13 @@
+#todo{
+    background-color: white; 
+    max-width: 160vh; 
+    height: 80vh;
+    margin-left:-10px;
+    display: flex;
+}
+
+.cooming-soon{
+    color: lightgray; 
+    font-size: 100px; 
+    margin: auto;
+}

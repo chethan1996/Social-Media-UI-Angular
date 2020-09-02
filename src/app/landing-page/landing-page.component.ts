@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import users from "../../assets/user.json";
+import { UserDetailsService } from '../user-details.service'
 
 
 @Component({
@@ -11,11 +13,11 @@ export class LandingPageComponent implements OnInit {
 
   usersData:any = users;
 
-  constructor() { }
+  constructor(private userService: UserDetailsService) { 
+    console.log(this.userService.getUserInfo(0))
+  }
 
   ngOnInit(): void {
-    console.log(this.usersData)
-    console.log(this.usersData.users[0].name)
 
   }
 
