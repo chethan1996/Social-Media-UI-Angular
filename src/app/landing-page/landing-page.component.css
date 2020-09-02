@@ -1,0 +1,64 @@
+
+.center {
+  margin: auto;
+  margin-top: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid DodgerBlue;
+  padding: 20px; 
+  width: 600px;
+  height: 600px;  
+  align-content: center;
+  background-color: #F0F0F0;
+  box-shadow: black;
+  /* overflow:auto; */
+}
+.row{
+    width: 580px;
+    height: 475px; 
+    overflow:auto;
+
+}
+
+b{
+    font-size: medium;
+    vertical-align: middle;
+
+}
+
+img{
+    max-width: 6vh;
+    max-height: 5vh;
+    overflow: hidden;
+    object-fit: cover;
+    vertical-align: middle;
+    
+
+}
+
+a { 
+    color: inherit;
+    text-decoration: none;
+
+ } 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  } */
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: lightgrey; 
+  }

@@ -1,0 +1,20 @@
+<div class="main">
+    <div class="center">
+        <div class="panel-heading">
+            <h4 style="text-align: center;">Select Account</h4>
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+        </div>
+        <div class="row">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-body" *ngFor="let user of usersData.users">
+                        <a style="cursor: pointer;">
+                            <img [src]="user.profilepicture" alt="Image Not Found" 
+                                class="img-circle"> 
+                            <b>  {{user.name}} </b> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
