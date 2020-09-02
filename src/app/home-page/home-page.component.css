@@ -1,0 +1,35 @@
+  .sidebar{
+    margin: auto;
+    margin-top: 80px;
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    /* border: 2px solid DodgerBlue; */
+    padding: 20px; 
+    width: 300px;
+    height: 800px;  
+    float: left;
+    background-color: hsl(0, 0%, 94%);
+    box-shadow: black;
+    background-color: blue; /* For browsers that do not support gradients */
+    background-image: linear-gradient( blue, purple); 
+    
+  }
+
+  #content{
+      margin-top:200px;
+  }
+
+  .profile, .galary , .todo , .posts{
+      color: gainsboro;
+      cursor: pointer;
+      font-family: fantasy;
+  }
+
+  .profile:hover,.todo:hover,.posts:hover,.galary:hover{
+      color:white;
+  }
+#active{
+    float:right;
+    
+}

@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  active:boolean[] = [true , false , false , false];
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onActive(index:number){
+    for ( let i=0 ; i<this.active.length ; i++){
+      if(this.active[i]===true)
+        this.active[i] = false;
+    }
+    this.active[index]= true;
+  }
 }

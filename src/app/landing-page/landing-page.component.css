@@ -22,7 +22,8 @@
 
 b{
     font-size: medium;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    /* float: right; */
 
 }
 

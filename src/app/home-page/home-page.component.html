@@ -1,1 +1,19 @@
-<p>home-page works!</p>
+<div class="sidebar">
+    <div class="col-md-15" id="content">
+        <h3 class="profile" (click)="onActive(0)"> Profile 
+            <i class="fa fa-chevron-right" *ngIf="active[0]" id="active"></i>
+        </h3>
+        <hr>
+        <h3 class="galary" (click)="onActive(1)"> Galary 
+            <i class="fa fa-chevron-right" *ngIf="active[1]" id="active"></i>
+        </h3>
+        <hr>
+        <h3 class="posts" (click)="onActive(2)"> Posts 
+            <i class="fa fa-chevron-right" *ngIf="active[2]" id="active"></i>
+        </h3>
+        <hr>
+        <h3 class="todo" (click)="onActive(3)"> ToDo    
+            <i class="fa fa-chevron-right" *ngIf="active[3]" id="active"></i>
+        </h3>
+    </div>
+</div>

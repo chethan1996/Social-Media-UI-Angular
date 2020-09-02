@@ -5,16 +5,17 @@
             <hr style="height:1px;border-width:0;color:gray;background-color:gray">
         </div>
         <div class="row">
-            <div class="panel-group">
-                <div class="panel panel-default">
-                    <div class="panel-body" *ngFor="let user of usersData.users">
-                        <a style="cursor: pointer;">
-                            <img [src]="user.profilepicture" alt="Image Not Found" 
-                                class="img-circle"> 
-                            <b>  {{user.name}} </b> </a>
+                    <div  *ngFor="let user of usersData.users">
+                        <a style="cursor: pointer;" class="list-group-item clearfix" 
+                        routerLink="/home" >
+                            <div class="pull-left col-xs-20">
+                                <img [src]="user.profilepicture" alt="Image Not Found" class="img-circle"> 
+                            </div>
+                            <div class="pull-right col-md-10">
+                                <b>  {{user.name}} </b>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
