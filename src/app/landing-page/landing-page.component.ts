@@ -14,11 +14,15 @@ export class LandingPageComponent implements OnInit {
   usersData:any = users;
 
   constructor(private userService: UserDetailsService) { 
-    console.log(this.userService.getUserInfo(0))
+    // console.log(this.userService.getUserInfo(0))
   }
 
   ngOnInit(): void {
 
+  }
+
+  onProfile(i:number){
+    this.userService.storeID(i);
   }
 
 

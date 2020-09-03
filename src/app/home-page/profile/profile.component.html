@@ -1,31 +1,31 @@
 <div class="col-md-4 pull-left">
     <div style="display: flex;">
-        <img [src]="user.users[0].profilepicture" alt="Image Not Found!" 
+        <img [src]="user.profilepicture" alt="Image Not Found!" 
             class="img-circle" style="max-width: 250px;margin: auto;" >
     </div>
 <p></p>
     <div style="display: flex;">
-        <h4 style="margin: auto; font-size: 25px;"> {{user.users[0].name}} </h4>
+        <h4 style="margin: auto; font-size: 25px;"> {{user.name}} </h4>
     </div>
 <p></p>
     <div style="display: flex;">
        <h4 style="color: gray; margin-left:50px;"> Username : </h4>
-        <h4> &nbsp; {{user.users[0].name}} </h4>
+        <h4> &nbsp; {{user.name}} </h4>
     </div>
 <p></p>
     <div style="display: flex;">
        <h4 style="color: gray; margin-left:50px;"> E-Mail : </h4>
-        <h4> &nbsp; {{user.users[0].email}} </h4>
+        <h4> &nbsp; {{user.email}} </h4>
     </div>
 <p></p>
     <div style="display: flex;">
        <h4 style="color: gray; margin-left:50px;"> Phone : </h4>
-        <h4> &nbsp; {{user.users[0].phone}} </h4>
+        <h4> &nbsp; {{user.phone}} </h4>
     </div>
 <p></p>
     <div style="display: flex;">
        <h4 style="color: gray; margin-left:50px;"> Website : </h4>
-        <h4> &nbsp; {{user.users[0].website}} </h4>
+        <h4> &nbsp; {{user.website}} </h4>
     </div>
 <hr style="height:1px;border-width:0;color:white;background-color:lightgray;margin:24px">
 <div style="display: flex;">
@@ -34,17 +34,17 @@
  <p></p>
     <div style="display: flex;">
        <h4 style="color: gray; margin-left:50px;"> Name : </h4>
-        <h4> &nbsp; {{user.users[0].company.name}} </h4>
+        <h4> &nbsp; {{user.company.name}} </h4>
     </div>
 <p></p>
     <div style="display: flex;">
        <h4 style="color: gray; margin-left:50px;"> CatchPhrase: </h4>
-        <h4 style="margin-left:5px;"> &nbsp; {{user.users[0].company.catchPhrase}} </h4>
+        <h4 style="margin-left:5px;"> &nbsp; {{user.company.catchPhrase}} </h4>
     </div>
 <p></p>
     <div style="display: flex;">
        <h4 style="color: gray; margin-left:50px;"> bs : </h4>
-        <h4> &nbsp; {{user.users[0].company.bs}} </h4>
+        <h4> &nbsp; {{user.company.bs}} </h4>
     </div>
 <div class="vl"> </div>
 </div>
@@ -58,22 +58,22 @@
     <p></p>
         <div style="display: flex;">
         <h4 style="color: gray; margin-left:80px;"> Street : </h4>
-            <h4> &nbsp; {{user.users[0].address.street}} </h4>
+            <h4> &nbsp; {{user.address.street}} </h4>
         </div>
     <p></p>
         <div style="display: flex;">
         <h4 style="color: gray; margin-left:80px;"> Suite : </h4>
-            <h4> &nbsp; {{user.users[0].address.suite}} </h4>
+            <h4> &nbsp; {{user.address.suite}} </h4>
         </div>
     <p></p>
         <div style="display: flex;">
         <h4 style="color: gray; margin-left:80px;"> City : </h4>
-            <h4> &nbsp; {{user.users[0].address.city}} </h4>
+            <h4> &nbsp; {{user.address.city}} </h4>
         </div>
     <p></p>
         <div style="display: flex;">
         <h4 style="color: gray; margin-left:80px;"> ZipCode : </h4>
-            <h4> &nbsp; {{user.users[0].address.zipcode}} </h4>
+            <h4> &nbsp; {{user.address.zipcode}} </h4>
         </div>
     <p></p>
     <div style="display: flex;">
@@ -82,10 +82,10 @@
     </div>
     <div style="display: flex;" class="pull-right">
         <p style="color: gray;">Lat:</p>
-        <p> {{user.users[0].address.geo.lat}} </p>
+        <p> {{user.address.geo.lat}} </p>
         &nbsp; &nbsp;
         <p style="color: gray;">Long:</p>
-        <p> {{user.users[0].address.geo.lng}} </p>
+        <p> {{user.address.geo.lng}} </p>
 
     </div>
 </div>

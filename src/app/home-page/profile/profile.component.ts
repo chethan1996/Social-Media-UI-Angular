@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserDetailsService } from 'src/app/user-details.service';
 
 import usersData from '../../../assets/user.json';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -10,14 +11,24 @@ import usersData from '../../../assets/user.json';
 })
 export class ProfileComponent implements OnInit {
 
-  user = usersData;
-  // user:any;
-  constructor( private userService : UserDetailsService) {
-    // this.user = this.userService.getUserInfo(0);
+  // user = usersData;
+  user:any;
+  id:number;
+  constructor( private userService : UserDetailsService , private route:ActivatedRoute) {
+    // this.id = this.userService.getID();
+    // this.user = this.userService.getUserInfo(this.id);
+
+    this.route.params.subscribe(
+      (params:Params) => {
+        let i;
+        i = this.route.snapshot.params['id'];
+        this.user = this.userService.getUserInfo(i);
+      }
+    )
    }
 
   ngOnInit(): void {
-    console.log("from init" + this.user.name)
+    
 
   }
 

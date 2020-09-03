@@ -5,9 +5,9 @@
             <hr style="height:1px;border-width:0;color:gray;background-color:gray">
         </div>
         <div class="row">
-                    <div  *ngFor="let user of usersData.users">
+                    <div  *ngFor="let user of usersData.users; let i = index">
                         <a style="cursor: pointer;" class="list-group-item clearfix" 
-                        routerLink="/home/profile" >
+                        [routerLink]="['/home', i, 'profile',i]" (click)="onProfile(i)" >
                             <div class="pull-left col-xs-20">
                                 <img [src]="user.profilepicture" alt="Image Not Found" class="img-circle"> 
                             </div>

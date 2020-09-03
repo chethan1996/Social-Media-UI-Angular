@@ -15,7 +15,10 @@
     background-image: linear-gradient( blue, purple);
     position: relative;
     z-index: 1;
-    
+  }
+
+  .active:focus{
+    outline:none;
   }
 
   #content{

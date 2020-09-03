@@ -10,8 +10,8 @@ import { TodoComponent } from './home-page/todo/todo.component';
 
 const routes: Routes = [
   { path:"", component:LandingPageComponent},
-  { path:"home" , component: HomePageComponent , children:[
-    { path:'profile' , component:ProfileComponent },
+  { path:"home/:id" , component: HomePageComponent , children:[
+    { path:'profile/:id' , component:ProfileComponent },
     { path:'posts' , component:PostsComponent },
     { path:'galary' , component:GalaryComponent },
     { path:'todo' , component:TodoComponent }
