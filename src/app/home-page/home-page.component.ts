@@ -86,6 +86,6 @@ export class HomePageComponent implements OnInit {
   }
 
   onChat(){
-    this.chatOpen = true;
+    this.chatOpen = !this.chatOpen;
   }
 }

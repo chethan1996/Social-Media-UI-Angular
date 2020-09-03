@@ -135,7 +135,26 @@
     z-index: 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    cursor: pointer;
 
+}
+
+.circle-online{
+    background: green;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 100px;
+    margin-top:20px;
+}
+
+.circle-offline{
+    background: lightgray;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 100px;
+    margin-top:20px;
 }
 /* width */
 ::-webkit-scrollbar {

@@ -75,12 +75,15 @@
             <i class="fa fa-angle-up" style="margin-left:230px;"></i> 
          </button>
         <div class="chat" *ngIf="chatOpen">
-            <h3 class="chat-header">Chats</h3>
+            <h3 class="chat-header" (click)="onChat()">Chats <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
             <div class="chat-list">
                 <ul class="list-group list-group-flush" >
-                    <li class="list-group-item" style="display: flex;" *ngFor="let user of users">
+                    <li class="list-group-item" style="display: flex; cursor: pointer;" *ngFor="let user of users; let i=index">
                         <img [src]="user.profilepicture" alt="Imge Not Found" class="img-circle" style="max-width: 20%; height: 50px;">
-                        <p style="margin-left:10px; margin-top:10px"> {{user.name}} </p>
+                        <p style="margin-left:10px; margin-top:10px; width: 150px;"> {{user.name}} </p>
+                        <div class="circle-online" *ngIf="i%2==0"></div>
+                        <div class="circle-offline" *ngIf="i%2!==0"></div>
+
                     </li>
                     
                 </ul>
