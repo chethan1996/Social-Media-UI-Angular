@@ -32,10 +32,12 @@
     <br> <br>
     <hr style="height:1px;border-width:0;color:white;background-color:lightgray;margin:24px">
     </div>
+
+    <!-- SignOut Form  -->
     <div class=" col-md pull-right">
         <div class="singout" *ngIf="singoutFormActive" #isOpen style="overflow: auto;">
             <div style="display: flex;">
-            <img [src]="user.profilepicture" alt="Image Not Found" class="img-circle" style="max-width: 130px;margin: auto;margin-top:2px ;">
+            <img [src]="user.profilepicture" alt="Image Not Found" class="img-circle" style="max-width: 130px; height: 80px; margin: auto;margin-top:2px ;">
             </div>
             <br>
             <div class="col-xs" style="display: flex;">
@@ -47,12 +49,12 @@
             </div>
         <hr style="height:1px;border-width:0;color:white;background-color:lightgray;margin:24px">
             <div class="col-xs" style="display: flex; cursor: pointer;" (click)="onNextUser1()">
-                <img [src]="users[nextUserID].profilepicture" alt="Image Not Found" class="img-circle" style="max-width: 50px;"> &nbsp; &nbsp;
+                <img [src]="users[nextUserID].profilepicture" alt="Image Not Found" class="img-circle" style="max-width: 50px; height: 40px;"> &nbsp; &nbsp;
                 <h4 class="pull-left"> {{users[nextUserID].name}} </h4>
             </div>
         <hr style="height:1px;border-width:0;color:white;background-color:lightgray;margin:24px">
             <div class="col-xs" style="display: flex; cursor: pointer;" (click)="onNextUser2()">
-                <img [src]="users[nextUserID2].profilepicture" alt="Image Not Found" class="img-circle" style="max-width: 50px;"> &nbsp; &nbsp;
+                <img [src]="users[nextUserID2].profilepicture" alt="Image Not Found" class="img-circle" style="max-width: 50px;height: 40px;"> &nbsp; &nbsp;
                 <h4 class="pull-left"> {{users[nextUserID2].name}} </h4>
             </div>
             <br>
@@ -62,9 +64,30 @@
         </div>
        
     </div>
-
-    <router-outlet></router-outlet>
-
     
+    <router-outlet></router-outlet>
+    
+    <!-- Chat box  -->
+    <div class="col-xs pull-right" >
+        <button type="button" class="chat-button" (click)="onChat()" *ngIf="!chatOpen"> 
+            <i class='fa fa-comment-o'></i>
+            Chats 
+            <i class="fa fa-angle-up" style="margin-left:230px;"></i> 
+         </button>
+        <div class="chat" *ngIf="chatOpen">
+            <h3 class="chat-header">Chats</h3>
+            <div class="chat-list">
+                <ul class="list-group list-group-flush" >
+                    <li class="list-group-item" style="display: flex;" *ngFor="let user of users">
+                        <img [src]="user.profilepicture" alt="Imge Not Found" class="img-circle" style="max-width: 20%; height: 50px;">
+                        <p style="margin-left:10px; margin-top:10px"> {{user.name}} </p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
     
 </div>

@@ -20,6 +20,7 @@ export class HomePageComponent implements OnInit {
   prevUserID:number;
   nextUserID:number;
   nextUserID2: number;
+  chatOpen:boolean = false;
 
   constructor(private userService : UserDetailsService , private route:ActivatedRoute , private router:Router) { 
     this.route.params.subscribe(
@@ -84,4 +85,7 @@ export class HomePageComponent implements OnInit {
     this.router.navigate(['home',id , 'profile',id ]);
   }
 
+  onChat(){
+    this.chatOpen = true;
+  }
 }
