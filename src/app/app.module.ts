@@ -10,6 +10,7 @@ import { ProfileComponent } from './home-page/profile/profile.component';
 import { PostsComponent } from './home-page/posts/posts.component';
 import { GalaryComponent } from './home-page/galary/galary.component';
 import { TodoComponent } from './home-page/todo/todo.component';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TodoComponent } from './home-page/todo/todo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ClickOutsideModule
   ],
   providers: [],
   bootstrap: [AppComponent]

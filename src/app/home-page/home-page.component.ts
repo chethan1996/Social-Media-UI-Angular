@@ -88,4 +88,8 @@ export class HomePageComponent implements OnInit {
   onChat(){
     this.chatOpen = !this.chatOpen;
   }
+
+  onOutside(e:Event){
+    this.singoutFormActive = false;
+  }
 }
