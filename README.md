@@ -8,3 +8,6 @@ Steps To Run:<br>
 <b> Dependency: </b> <br>
 Angular<br>
 NPM
+<br>
+<b>OR </b>
+<a href="http://socila-medai-ui.s3-website-us-east-1.amazonaws.com/">Click Here </a> For Demo
