@@ -1,4 +1,4 @@
-##Social Media UI
+<h1>Social Media UI</h1>
 
 Steps To Run:<br>
 <b> Step 1: </b> ``npm install`` <br>
